@@ -125,10 +125,10 @@ Sistema para gerenciar cursos EAD.
 - MySQL Workbench ou qualquer cliente MySQL
 
 ### Passos
-1. Clone este repositório 
-´´´ bash
-(https://github.com/AlexandreJulioDev/MY-SQL.git).
-´´´
+1. Clone este repositório:
+```bash
+https://github.com/AlexandreJulioDev/MY-SQL.git
+```
 
 2. Abra o MySQL Workbench
 
@@ -180,7 +180,7 @@ INNER JOIN TB_CATEGORIAS ON TB_PIZZAS.CATEGORIA_ID = TB_CATEGORIAS.ID;
 **ALEXANDRE JULIO**
 - GitHub: [@AlexandreJulioDev](https://github.com/AlexandreJulioDev)
 - LinkedIn: [Alexandre julio](https://www.linkedin.com/in/alexandre-julio-0b007a211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-
+  
 ## 📄 Licença
 
 Este projeto foi desenvolvido para fins educacionais como parte do bootcamp da Generation Brasil.
