@@ -126,7 +126,7 @@ Sistema para gerenciar cursos EAD.
 
 ### Passos
 1. Clone este repositório 
-´´´
+´´´ bash
 (https://github.com/AlexandreJulioDev/MY-SQL.git).
 ´´´
 
