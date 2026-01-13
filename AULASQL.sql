@@ -1,0 +1,44 @@
+-- ATIVIDADE 01 - Sistema de RH
+
+-- Criar o banco de dados
+CREATE DATABASE DB_RH;
+
+-- Selecionar o banco de dados
+USE DB_RH;
+
+-- Criar a tabela de colaboradores
+CREATE TABLE TB_COLABORADORES (
+    ID BIGINT AUTO_INCREMENT PRIMARY KEY,
+    NOME VARCHAR(100) NOT NULL,
+    CARGO VARCHAR(50) NOT NULL,
+    SALARIO DECIMAL(10, 2) NOT NULL,
+    DEPARTAMENTO VARCHAR(50) NOT NULL,
+    DATA_ADMISSAO DATE NOT NULL
+);
+
+-- Inserir 5 registros na tabela
+INSERT INTO TB_COLABORADORES (NOME, CARGO, SALARIO, DEPARTAMENTO, DATA_ADMISSAO) 
+VALUES ("Ana Silva", "Analista de TI", 3500.00, "Tecnologia", "2022-03-15");
+
+INSERT INTO TB_COLABORADORES (NOME, CARGO, SALARIO, DEPARTAMENTO, DATA_ADMISSAO) 
+VALUES ("Carlos Souza", "Assistente Administrativo", 1800.00, "Administrativo", "2023-01-10");
+
+INSERT INTO TB_COLABORADORES (NOME, CARGO, SALARIO, DEPARTAMENTO, DATA_ADMISSAO) 
+VALUES ("Maria Santos", "Gerente de Vendas", 5500.00, "Comercial", "2021-06-20");
+
+INSERT INTO TB_COLABORADORES (NOME, CARGO, SALARIO, DEPARTAMENTO, DATA_ADMISSAO) 
+VALUES ("João Oliveira", "Auxiliar de Estoque", 1500.00, "Logística", "2023-08-05");
+
+INSERT INTO TB_COLABORADORES (NOME, CARGO, SALARIO, DEPARTAMENTO, DATA_ADMISSAO) 
+VALUES ("Fernanda Costa", "Coordenadora de RH", 4200.00, "Recursos Humanos", "2020-11-12");
+
+-- SELECT de colaboradores com salário maior que 2000
+SELECT * FROM TB_COLABORADORES WHERE SALARIO > 2000;
+
+-- SELECT de colaboradores com salário menor que 2000
+SELECT * FROM TB_COLABORADORES WHERE SALARIO < 2000;
+
+-- Atualizar um registro (exemplo: aumento de salário para João Oliveira)
+UPDATE TB_COLABORADORES 
+SET SALARIO = 1850.00 
+WHERE ID = 4;
