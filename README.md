@@ -125,10 +125,10 @@ Sistema para gerenciar cursos EAD.
 - MySQL Workbench ou qualquer cliente MySQL
 
 ### Passos
-1. Clone este repositório: 
-```bash
+1. Clone este repositório 
+´´´
 (https://github.com/AlexandreJulioDev/MY-SQL.git).
-```
+´´´
 
 2. Abra o MySQL Workbench
 
